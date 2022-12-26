@@ -24,3 +24,23 @@ extension DateFormatter {
         return formatter
     }()
 }
+
+extension String {
+    func dateParsed() -> Date {
+        guard let parsedDate = DateFormatter.allNumericUSA.date(from: self) else { return Date() }
+        
+        return parsedDate
+    }
+}
+
+extension Date {
+    func formatted() -> String {
+        return self.formatted(.dateTime.year().month().day())
+    }
+}
+
+extension Double {
+    func roundedTo2Digits() -> Double {
+        return (self * 100).rounded() / 100
+    }
+}

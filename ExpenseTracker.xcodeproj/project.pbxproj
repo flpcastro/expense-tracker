@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F2A531129564B3000003FC8 /* SwiftUIFontIcon in Frameworks */ = {isa = PBXBuildFile; productRef = 3F2A531029564B3000003FC8 /* SwiftUIFontIcon */; };
+		3F2A531329564DA800003FC8 /* TransactionListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2A531229564DA800003FC8 /* TransactionListViewModel.swift */; };
+		3F31C71C295A38CF000CCB1F /* TransactionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F31C71B295A38CF000CCB1F /* TransactionList.swift */; };
+		3F31C71F295A3DDC000CCB1F /* Collections in Frameworks */ = {isa = PBXBuildFile; productRef = 3F31C71E295A3DDC000CCB1F /* Collections */; };
+		3F31C722295A3ECE000CCB1F /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 3F31C721295A3ECE000CCB1F /* SwiftUICharts */; };
 		3F7D3D902955665200C411A4 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7D3D8F2955665200C411A4 /* Extensions.swift */; };
 		3F7D3D922955698500C411A4 /* TransactionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7D3D912955698500C411A4 /* TransactionModel.swift */; };
 		3F7D3D9429556ABF00C411A4 /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7D3D9329556ABF00C411A4 /* PreviewData.swift */; };
@@ -15,9 +20,12 @@
 		3FCC8D922953B290005ECD28 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCC8D912953B290005ECD28 /* ContentView.swift */; };
 		3FCC8D942953B291005ECD28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FCC8D932953B291005ECD28 /* Assets.xcassets */; };
 		3FCC8D972953B291005ECD28 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FCC8D962953B291005ECD28 /* Preview Assets.xcassets */; };
+		3FD278EB29593CB200809F3C /* RecentTransactionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD278EA29593CB200809F3C /* RecentTransactionList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F2A531229564DA800003FC8 /* TransactionListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListViewModel.swift; sourceTree = "<group>"; };
+		3F31C71B295A38CF000CCB1F /* TransactionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionList.swift; sourceTree = "<group>"; };
 		3F7D3D8F2955665200C411A4 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		3F7D3D912955698500C411A4 /* TransactionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionModel.swift; sourceTree = "<group>"; };
 		3F7D3D9329556ABF00C411A4 /* PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewData.swift; sourceTree = "<group>"; };
@@ -27,6 +35,7 @@
 		3FCC8D912953B290005ECD28 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3FCC8D932953B291005ECD28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FCC8D962953B291005ECD28 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3FD278EA29593CB200809F3C /* RecentTransactionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentTransactionList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +43,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F31C722295A3ECE000CCB1F /* SwiftUICharts in Frameworks */,
+				3F31C71F295A3DDC000CCB1F /* Collections in Frameworks */,
+				3F2A531129564B3000003FC8 /* SwiftUIFontIcon in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,7 +73,10 @@
 			children = (
 				3FCC8D8F2953B290005ECD28 /* ExpenseTrackerApp.swift */,
 				3FCC8D912953B290005ECD28 /* ContentView.swift */,
+				3FD278EA29593CB200809F3C /* RecentTransactionList.swift */,
+				3F31C71B295A38CF000CCB1F /* TransactionList.swift */,
 				3F7D3D9529556B9F00C411A4 /* TransactionRow.swift */,
+				3F2A531229564DA800003FC8 /* TransactionListViewModel.swift */,
 				3F7D3D912955698500C411A4 /* TransactionModel.swift */,
 				3F7D3D8F2955665200C411A4 /* Extensions.swift */,
 				3FCC8D932953B291005ECD28 /* Assets.xcassets */,
@@ -95,6 +110,11 @@
 			dependencies = (
 			);
 			name = ExpenseTracker;
+			packageProductDependencies = (
+				3F2A531029564B3000003FC8 /* SwiftUIFontIcon */,
+				3F31C71E295A3DDC000CCB1F /* Collections */,
+				3F31C721295A3ECE000CCB1F /* SwiftUICharts */,
+			);
 			productName = ExpenseTracker;
 			productReference = 3FCC8D8C2953B290005ECD28 /* ExpenseTracker.app */;
 			productType = "com.apple.product-type.application";
@@ -123,6 +143,11 @@
 				Base,
 			);
 			mainGroup = 3FCC8D832953B28F005ECD28;
+			packageReferences = (
+				3F2A530F29564B3000003FC8 /* XCRemoteSwiftPackageReference "SwiftUIFontIcon" */,
+				3F31C71D295A3DDC000CCB1F /* XCRemoteSwiftPackageReference "swift-collections" */,
+				3F31C720295A3ECE000CCB1F /* XCRemoteSwiftPackageReference "ChartView" */,
+			);
 			productRefGroup = 3FCC8D8D2953B290005ECD28 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -150,10 +175,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F7D3D9429556ABF00C411A4 /* PreviewData.swift in Sources */,
+				3F31C71C295A38CF000CCB1F /* TransactionList.swift in Sources */,
+				3FD278EB29593CB200809F3C /* RecentTransactionList.swift in Sources */,
 				3F7D3D922955698500C411A4 /* TransactionModel.swift in Sources */,
 				3FCC8D922953B290005ECD28 /* ContentView.swift in Sources */,
 				3F7D3D9629556B9F00C411A4 /* TransactionRow.swift in Sources */,
 				3F7D3D902955665200C411A4 /* Extensions.swift in Sources */,
+				3F2A531329564DA800003FC8 /* TransactionListViewModel.swift in Sources */,
 				3FCC8D902953B290005ECD28 /* ExpenseTrackerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -353,6 +381,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3F2A530F29564B3000003FC8 /* XCRemoteSwiftPackageReference "SwiftUIFontIcon" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/huybuidac/SwiftUIFontIcon";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		3F31C71D295A3DDC000CCB1F /* XCRemoteSwiftPackageReference "swift-collections" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-collections.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.2;
+			};
+		};
+		3F31C720295A3ECE000CCB1F /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppPear/ChartView";
+			requirement = {
+				kind = exactVersion;
+				version = "2.0.0-beta.2";
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3F2A531029564B3000003FC8 /* SwiftUIFontIcon */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3F2A530F29564B3000003FC8 /* XCRemoteSwiftPackageReference "SwiftUIFontIcon" */;
+			productName = SwiftUIFontIcon;
+		};
+		3F31C71E295A3DDC000CCB1F /* Collections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3F31C71D295A3DDC000CCB1F /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = Collections;
+		};
+		3F31C721295A3ECE000CCB1F /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3F31C720295A3ECE000CCB1F /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3FCC8D842953B28F005ECD28 /* Project object */;
 }
